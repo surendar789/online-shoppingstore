@@ -31,6 +31,7 @@ public class CategoryDAOTestCase {
 
 		// get the categoryDAO from context
 		categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
+		
 
 		// get the category from context
 

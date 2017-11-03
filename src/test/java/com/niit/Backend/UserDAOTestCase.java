@@ -28,6 +28,7 @@ public class UserDAOTestCase {
 		context = new AnnotationConfigApplicationContext();
 		context.scan("com.niit");
 		context.refresh();
+		
 
 		userDAO = (UserDAO) context.getBean("userDAO");
 
