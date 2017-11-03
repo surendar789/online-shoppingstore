@@ -32,6 +32,7 @@ public class UserDAOTestCase {
 		userDAO = (UserDAO) context.getBean("userDAO");
 
 		user = (User) context.getBean("user");
+		
 
 	}
 

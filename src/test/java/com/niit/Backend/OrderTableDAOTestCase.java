@@ -30,6 +30,7 @@ public class OrderTableDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 		
+		
 		//get the categoryDAO from context
 		orderTableDAO =  (OrderTableDAO) context.getBean("orderTableDAO");
 		
