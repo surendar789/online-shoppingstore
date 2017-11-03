@@ -39,6 +39,7 @@ public class CategoryDAOTestCase {
 
 	}
 
+	
 	/*@Test
 	public void createCategoryTestCase() {
 		category.setId("WOMEN_009");
