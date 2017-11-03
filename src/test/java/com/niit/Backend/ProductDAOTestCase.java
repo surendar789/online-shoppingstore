@@ -29,6 +29,7 @@ public class ProductDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 		
+		
 		//get the categoryDAO from context
 		productDAO =  (ProductDAO) context.getBean("productDAO");
 		

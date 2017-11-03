@@ -31,6 +31,7 @@ public class OrderTableDAOTestCase {
 		context.refresh();
 		
 		
+		
 		//get the categoryDAO from context
 		orderTableDAO =  (OrderTableDAO) context.getBean("orderTableDAO");
 		
