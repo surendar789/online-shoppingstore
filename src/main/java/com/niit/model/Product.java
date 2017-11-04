@@ -23,7 +23,6 @@ public class Product {
 	private double price;
 	private int quantity;
 
-	// We need to specify many-to-one
 	private String category_id;
 
 	private String supplier_id;
