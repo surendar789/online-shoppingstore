@@ -29,7 +29,6 @@ public class CategoryDAOImpl implements CategoryDAO{
 		{
 		sessionFactory.getCurrentSession().save(category);
 		}catch (Exception e) {
-			//if any exception comes during execute of try block, catch will execute
 			e.printStackTrace();
 			return false;
 		}
@@ -41,7 +40,6 @@ public class CategoryDAOImpl implements CategoryDAO{
 		{
 		sessionFactory.getCurrentSession().update(category);
 		}catch (Exception e) {
-			//if any exception comes during execute of try block, catch will execute
 			e.printStackTrace();
 			return false;
 		}

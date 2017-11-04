@@ -27,8 +27,6 @@ public class OrderTableDAOImpl implements OrderTableDAO{
 		try {
 			sessionFactory.getCurrentSession().save(orderTable);
 		} catch (Exception e) {
-			// if any excpetion comes during execute of try block, catch will
-			// excute
 			e.printStackTrace();
 			return false;
 		}

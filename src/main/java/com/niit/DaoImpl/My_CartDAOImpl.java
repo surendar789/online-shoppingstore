@@ -27,8 +27,6 @@ public class My_CartDAOImpl implements My_CartDAO {
 		try {
 			sessionFactory.getCurrentSession().save(my_Cart);
 		} catch (Exception e) {
-			// if any excpetion comes during execute of try block, catch will
-			// excute
 			e.printStackTrace();
 			return false;
 		}
@@ -39,8 +37,6 @@ public class My_CartDAOImpl implements My_CartDAO {
 		try {
 			sessionFactory.getCurrentSession().update(my_Cart);
 		} catch (Exception e) {
-			// if any excpetion comes during execute of try block, catch will
-			// excute
 			e.printStackTrace();
 			return false;
 		}

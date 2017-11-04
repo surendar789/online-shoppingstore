@@ -28,8 +28,6 @@ public class AddressDAOImpl implements AddressDAO {
 		try {
 			sessionFactory.getCurrentSession().save(address);
 		} catch (Exception e) {
-			// if any exception comes during execute of try block, catch will
-			// execute
 			e.printStackTrace();
 			return false;
 		}
@@ -40,8 +38,6 @@ public class AddressDAOImpl implements AddressDAO {
 		try {
 			sessionFactory.getCurrentSession().update(address);
 		} catch (Exception e) {
-			// if any exception comes during execute of try block, catch will
-			// execute
 			e.printStackTrace();
 			return false;
 		}
@@ -54,9 +50,6 @@ public class AddressDAOImpl implements AddressDAO {
 
 	public Address get(String id) {
 		
-		//get method get the date from user table based on primary key i.e., id
-		// and set it to Category class
-		//like select * from category where id = ?
 	  return 	(Address)  sessionFactory.getCurrentSession().get(Address.class, id);
 		
 	}
@@ -65,8 +58,6 @@ public class AddressDAOImpl implements AddressDAO {
 		try {
 			sessionFactory.getCurrentSession().delete(getAddressById(id));
 		} catch (Exception e) {
-			// if any exception comes during execute of try block, catch will
-			// execute
 			e.printStackTrace();
 			return false;
 		}
