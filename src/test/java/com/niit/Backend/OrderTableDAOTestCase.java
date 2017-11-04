@@ -32,10 +32,8 @@ public class OrderTableDAOTestCase {
 		
 		
 		
-		//get the categoryDAO from context
 		orderTableDAO =  (OrderTableDAO) context.getBean("orderTableDAO");
 		
-		//get the category from context
 		
 		orderTable = (OrderTable)context.getBean("orderTable");
 		
@@ -46,7 +44,7 @@ public class OrderTableDAOTestCase {
 	/*@Test
 	public void createOrderTableTestCase(){
 		orderTable.setId(1);
-		orderTable.setUser_id("Kiran");
+		orderTable.setUser_id("Raju");
 		orderTable.setStatus("N");
 		boolean flag = orderTableDAO.save(orderTable);
 		assertEquals("createOrderTableTestCase", true, flag);
@@ -54,7 +52,7 @@ public class OrderTableDAOTestCase {
 	
 	@Test
 	public void listTestCase(){
-		int orderedSize = orderTableDAO.list("Kiran").size();
+		int orderedSize = orderTableDAO.list("Raju").size();
 		assertEquals(1, orderedSize);
 	}*/
 

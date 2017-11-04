@@ -28,10 +28,8 @@ public class ContactDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 
-		// get the categoryDAO from context
 		contactDAO = (ContactDAO) context.getBean("contactDAO");
 
-		// get the category from context
 
 		contact = (Contact) context.getBean("contact");
 
@@ -39,9 +37,9 @@ public class ContactDAOTestCase {
 
 	/*@Test
 	public void createContactTestCase() {
-		contact.setName("T Pradeep Reddy");
-		contact.setEmail("pradeeptv99@gmail.com");
-		contact.setContact("7799881234");
+		contact.setName("S Surender Reddy");
+		contact.setEmail("surender@gmail.com");
+		contact.setContact("8267425690");
 		contact.setMessage("Original : You designed a  web application");
 
 		boolean flag = contactDAO.save(contact);

@@ -29,11 +29,9 @@ public class CategoryDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 
-		// get the categoryDAO from context
 		categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
 		
 
-		// get the category from context
 
 		category = (Category) context.getBean("category");
 
@@ -42,9 +40,9 @@ public class CategoryDAOTestCase {
 	
 	/*@Test
 	public void createCategoryTestCase() {
-		category.setId("WOMEN_009");
-		category.setName("WOMEN001");
-		category.setDescription("This category contains Top wears 12345SS");
+		category.setId("Mobiles");
+		category.setName("Mobiles");
+		category.setDescription("This category contains Top Mobiles");
 
 		boolean flag = categoryDAO.save(category);
 
@@ -55,9 +53,9 @@ public class CategoryDAOTestCase {
 */
 	/*@Test
 	public void updateCategoryTestCase() {
-		category.setId("MEN&WOMEN_003");
-		category.setName("MEN&WOMEN");
-		category.setDescription("This category contains Top Wears");
+		category.setId("Mobiles");
+		category.setName("Mobiles");
+		category.setDescription("This category contains smart phones");
 
 		boolean flag = categoryDAO.update(category);
 
@@ -67,7 +65,7 @@ public class CategoryDAOTestCase {
 
 	@Test
 	public void deleteCategoryTestCase() {
-		category.setName("MOBILES");
+		category.setName("Mobiles");
 		boolean flag = categoryDAO.delete(category.getName());
 
 		assertEquals("deleteCategoryTestCase", true, flag);

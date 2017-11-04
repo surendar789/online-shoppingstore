@@ -38,11 +38,11 @@ public class UserDAOTestCase {
 
 	}
 
-	@Test
+	/*@Test
 	public void createUserTestCase() {
-		user.setId("krish");
-		user.setName("krish");
-		user.setPassword("krish");
+		user.setId("admin1");
+		user.setName("admin1");
+		user.setPassword("admin1");
 		user.setRole("ROLE_ADMIN");
 		user.setContact("9989988806");
 		boolean flag = userDAO.save(user);
@@ -53,9 +53,9 @@ public class UserDAOTestCase {
 
 	/*@Test
 	public void updateUserTestCase() {
-		user.setId("Uday");
-		user.setName("UdayK");
-		user.setPassword("Udaykk");
+		user.setId("admin");
+		user.setName("admin");
+		user.setPassword("admin");
 		user.setRole("ROLE_ADMIN");
 		user.setContact("8877665544");
 		boolean flag = userDAO.update(user);
@@ -67,7 +67,7 @@ public class UserDAOTestCase {
 	@Test
 	public void validateUserTestCase() {
 
-		boolean flag = userDAO.validate("Kiran", "Kiran");
+		boolean flag = userDAO.validate("admin", "admin");
 		assertEquals(true, flag);
 
 	}

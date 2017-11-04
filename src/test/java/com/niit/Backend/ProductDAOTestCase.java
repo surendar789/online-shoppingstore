@@ -30,26 +30,24 @@ public class ProductDAOTestCase {
 		context.refresh();
 		
 		
-		//get the categoryDAO from context
 		productDAO =  (ProductDAO) context.getBean("productDAO");
 		
-		//get the category from context
 		product = (Product)context.getBean("product");
 		
 	}
 	
 	
-	@Test
+	/*@Test
 	public void createProductTestCase()
 	{
 		
 		product.setId("Moto_001");
-		product.setCategory_id("ELECTRONICS_001");
+		product.setCategory_id("Mobiles");
 		product.setDescription("Brand new Moto G4 32gb white");
 		product.setName("Moto G4 Plus");
 		product.setPrice(14499);
 		product.setQuantity(1);
-		product.setSupplier_id("SP_Reliance");
+		product.setSupplier_id("S0001");
 		
 		boolean flag =  productDAO.saveOrUpdate(product);
 
@@ -62,9 +60,9 @@ public class ProductDAOTestCase {
 		product.setId("Moto");
 		product.setName("Moto G4 Plus");
 		product.setDescription("Brand new Moto G4 32gb black");
-		product.setCategory_id("ELECTRONICS");
+		product.setCategory_id("Mobiles");
 		product.setPrice(14999);
-		product.setSupplier_id("SP_Sangeetha");
+		product.setSupplier_id("S0002");
 		product.setQuantity(4);
 		boolean flag = productDAO.saveOrUpdate(product);
 		assertEquals("update Product TestCase",true,flag);

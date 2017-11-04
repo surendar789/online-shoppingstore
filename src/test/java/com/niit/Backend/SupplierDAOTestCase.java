@@ -28,20 +28,17 @@ public class SupplierDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 
-		// get the categoryDAO from context
 		supplierDAO = (SupplierDAO) context.getBean("supplierDAO");
-
-		// get the category from context
 
 		supplier = (Supplier) context.getBean("supplier");
 
 	}
 
-	@Test
+	/*@Test
 	public void createSupplierTestCase() {
-		supplier.setId("SP_Univercell");
-		supplier.setName("Univercell Mobiles");
-		supplier.setAddress("Anantapur");
+		supplier.setId("S0001");
+		supplier.setName("Big C");
+		supplier.setAddress("Ameerpet");
 
 		boolean flag = supplierDAO.save(supplier);
 
@@ -51,9 +48,9 @@ public class SupplierDAOTestCase {
 
 	/*@Test
 	public void updateSupplierTestCase() {
-		supplier.setId("SP_Reliance");
+		supplier.setId("S0002");
 		supplier.setName("Reliance Mobiles");
-		supplier.setAddress("Bangalore");
+		supplier.setAddress("Beeramguda");
 
 		boolean flag = supplierDAO.update(supplier);
 

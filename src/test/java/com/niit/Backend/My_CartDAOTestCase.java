@@ -36,17 +36,15 @@ public class My_CartDAOTestCase {
 		context.scan("com.niit");
 		context.refresh();
 		
-		//get the categoryDAO from context
 		my_CartDAO =  (My_CartDAO) context.getBean("my_CartDAO");
 		
-		//get the category from context
 		my_Cart = (My_Cart)context.getBean("my_Cart");
 		
 	}
 	
 	/*@Test
 	public void createCartTestCase() {
-		my_Cart.setUser_id("Kiran");
+		my_Cart.setUser_id("Raju");
 		my_Cart.setPrice(15000);
 		my_Cart.setProduct_name("Moto G5 Plus");
 		
@@ -57,7 +55,7 @@ public class My_CartDAOTestCase {
 	
 	@Test
 	public void deleteCartTestCase(){
-		boolean flag = my_CartDAO.deleteAllProductsInCart("Kiran");
+		boolean flag = my_CartDAO.deleteAllProductsInCart("Raju");
 		
 		assertEquals(true, flag);
 	}*/
