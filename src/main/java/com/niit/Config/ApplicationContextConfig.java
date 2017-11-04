@@ -23,7 +23,7 @@ import com.niit.model.Supplier;
 import com.niit.model.User;
 
 @Configuration
-@ComponentScan("com.niit.shoppingcart")
+@ComponentScan("com.niit")
 @EnableTransactionManagement
 public class ApplicationContextConfig {
 
