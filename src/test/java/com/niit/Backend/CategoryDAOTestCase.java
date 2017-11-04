@@ -51,6 +51,7 @@ public class CategoryDAOTestCase {
 		assertEquals("createCategoryTestCase", true, flag);
 
 	}
+	
 */
 	/*@Test
 	public void updateCategoryTestCase() {
