@@ -69,8 +69,6 @@ public class ProductDAOImpl implements ProductDAO {
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		query.setString(0, categoryId);
 		return query.list();
-
-		// TODO Auto-generated method stub
 	}
 
 	public List<Product> getAllProductsBySupplierId(String supplierId) {

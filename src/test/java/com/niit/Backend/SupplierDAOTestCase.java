@@ -37,7 +37,7 @@ public class SupplierDAOTestCase {
 
 	}
 
-	/*@Test
+	@Test
 	public void createSupplierTestCase() {
 		supplier.setId("SP_Univercell");
 		supplier.setName("Univercell Mobiles");
@@ -49,7 +49,7 @@ public class SupplierDAOTestCase {
 
 	}
 
-	@Test
+	/*@Test
 	public void updateSupplierTestCase() {
 		supplier.setId("SP_Reliance");
 		supplier.setName("Reliance Mobiles");

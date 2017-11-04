@@ -39,7 +39,7 @@ public class ProductDAOTestCase {
 	}
 	
 	
-	/*@Test
+	@Test
 	public void createProductTestCase()
 	{
 		
@@ -56,7 +56,7 @@ public class ProductDAOTestCase {
 		assertEquals("createProductTestCase",true,flag);
 		
 	}
-	@Test
+	/*@Test
 	public void updateCategoryTestCase()
 	{
 		product.setId("Moto");

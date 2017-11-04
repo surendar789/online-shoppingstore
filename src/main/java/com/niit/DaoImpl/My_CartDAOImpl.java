@@ -55,8 +55,7 @@ public class My_CartDAOImpl implements My_CartDAO {
 		return (Double) sessionFactory.getCurrentSession().createQuery("select sum(price) from My_Cart where user_Id=?").setString(0, userID).uniqueResult();
 	}
 
-	public boolean delete(int id) {
-		// TODO Auto-generated method stub
+	public boolean delete(int id){
 		try {
 			sessionFactory.getCurrentSession().delete(getCartById(id));
 		} catch (Exception e) {

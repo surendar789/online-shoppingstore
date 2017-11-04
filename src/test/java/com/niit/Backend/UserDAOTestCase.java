@@ -12,6 +12,7 @@ import com.niit.model.User;
 
 
 
+
 public class UserDAOTestCase {
 
 	@Autowired
@@ -37,7 +38,7 @@ public class UserDAOTestCase {
 
 	}
 
-	/*@Test
+	@Test
 	public void createUserTestCase() {
 		user.setId("krish");
 		user.setName("krish");
@@ -50,7 +51,7 @@ public class UserDAOTestCase {
 
 	}
 
-	@Test
+	/*@Test
 	public void updateUserTestCase() {
 		user.setId("Uday");
 		user.setName("UdayK");
